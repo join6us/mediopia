@@ -1,6 +1,7 @@
 import '../webapp/css/custom.css';
  
 import React from 'react';
+
 import ReactDOM from 'react-dom';
  
 class MainPage extends React.Component {
