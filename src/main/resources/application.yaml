@@ -1,0 +1,23 @@
+
+spring:
+  http:
+    encoding:
+      charset:    UTF-8
+  output:
+    ansi:
+      enabled: always
+  mvc:
+    view:
+      prefix:     /jsp/
+      suffix:     .jsp
+  datasource:
+    driver-class-name: oracle.jdbc.OracleDriver
+    url: jdbc:oracle:thin:@//221.149.54.67:1521/bcssys
+    username: bcu_dev_user
+    password: devlmspass
+mybatis:
+  type-aliases-package : myweb.test
+  mapper-locations: mapper/**/*.xml
+server:
+  tomcat:
+    uri-encoding: UTF-8
